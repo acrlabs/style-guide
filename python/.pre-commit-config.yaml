@@ -7,10 +7,12 @@ repos:
       - id: check-yaml
         args: ["--allow-multiple-documents"]
       - id: trailing-whitespace
-  - repo: https://github.com/asottile/reorder-python-imports
-    rev: v3.10.0
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
     hooks:
-      - id: reorder-python-imports
+      - id: isort
+        args:
+          - --sl
   - repo: https://github.com/PyCQA/flake8
     rev: 6.0.0
     hooks:
