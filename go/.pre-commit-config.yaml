@@ -1,16 +1,16 @@
 ---
 repos:
-  - repo: https://github.com/pre-commit/pre-commit-hooks
+  - repo: "https://github.com/pre-commit/pre-commit-hooks"
     rev: v4.4.0
     hooks:
       - id: end-of-file-fixer
       - id: trailing-whitespace
-  - repo: https://github.com/adrienverge/yamllint.git
+  - repo: "https://github.com/adrienverge/yamllint.git"
     rev: v1.35.1
     hooks:
       - id: yamllint
         args: ['--strict', '-d', '{extends: default, rules: {line-length: {max: 120}}}']
-  - repo: https://github.com/golangci/golangci-lint
+  - repo: "https://github.com/golangci/golangci-lint"
     rev: v1.59.1
     hooks:
       - id: golangci-lint
