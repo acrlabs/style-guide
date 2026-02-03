@@ -11,7 +11,7 @@ repos:
       - id: yamllint
         args: ['--strict', '-d', '{extends: default, rules: {line-length: {max: 120}}}']
   - repo: "https://github.com/pre-commit/mirrors-mypy"
-    rev: v1.4.1
+    rev: v1.19.1
     hooks:
       - id: mypy
   - repo: "https://github.com/astral-sh/ruff-pre-commit"
