@@ -20,3 +20,7 @@ repos:
       - id: ruff
         args: ["--fix"]
       - id: ruff-format
+  - repo: "https://github.com/igorshubovych/markdownlint-cli"
+    rev: v0.47.0
+    hooks:
+      - id: markdownlint-fix
